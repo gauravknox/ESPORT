@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSports Tournament Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Apply transparent background to all elements */
+        * {
+            background-color: transparent;
+        }
+        body {
+            background-image: url('wp6070348-desktop-samurai-wallpapers.png'); /* Update with your gaming image path */
+            background-size: cover;
+            background-position: center;
+            color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(44, 44, 44, 0.5); /* More transparent background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .game-logo {
+            font-size: 50px;
+        }
+        .content h2 {
+            color: #00cc66;
+        }
+        .event-details {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .tournament-info {
+            margin-bottom: 20px;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .icon {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .rsvp-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #00cc66;
+            color: #1a1a1a;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .rsvp-btn:hover {
+            background-color: #00994d;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.5); /* Lighter border */
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.3); /* Transparent input background */
+            color: #f0f0f0; /* Text color for better visibility */
+        }
+        .form-group input::placeholder {
+            color: rgba(240, 240, 240, 0.7); /* Placeholder text color */
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 15px;
+            }
+            .game-logo {
+                font-size: 40px;
+            }
+            .event-details, .info-item .detail {
+                font-size: 16px;
+            }
+            .rsvp-btn {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="invitation-card">
+            <div class="header">
+                <h1>eSports Tournament</h1>
+                <div class="game-logo">🎮</div>
+            </div>
+            <div class="content">
+                <h2>You're Invited!</h2>
+                <p class="event-details">
+                    Join us for an epic gaming tournament filled with excitement and competition!
+                </p>
+                
+                <div class="tournament-info">
+                    <div class="info-item">
+                        <span class="icon">📅</span>
+                        <span class="detail" id="date">Date: June 15, 2025</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">⏰</span>
+                        <span class="detail">Time: 2:00 PM EST</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">🎮</span>
+                        <span class="detail">Game: National Esports League</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">🏆</span>
+                        <span class="detail">Prize Pool: $10,000</span>
+                    </div>
+                </div>
+
+                <!-- Registration Form -->
+                <form action="https://formspree.io/f/xkgozdkr" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit" class="rsvp-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function RSVP() {
+            alert("Thank you for your RSVP! We look forward to seeing you at the tournament.");
+        }
+    </script>
+</body>
+</html>
